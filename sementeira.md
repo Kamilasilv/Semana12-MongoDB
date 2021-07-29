@@ -1,4 +1,5 @@
 db.vendas.insertMany([
+
     {
             "vendedor": {
                         "nome": "Renato Gabriel",
