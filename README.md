@@ -41,7 +41,7 @@ Atualizando campo já existente: (incluindo sobrenome da cliente)
 - db.getCollection('vendas').update({"cliente.nome": "Raquel"},{$set:{"cliente.nome": "Raquel Freitas"}})
 ---
 ###   Exclusão de documentos (pelo nome do cliente):
-- db.getCollection('vendas').remove({ "cliente":  "Raquel Freitas" })
+- db.getCollection('vendas').remove({"cliente.nome":"Raquel Freitas"})
 
 ---
 ### Consulta com projeção: 
